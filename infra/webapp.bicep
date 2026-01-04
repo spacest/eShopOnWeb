@@ -1,5 +1,5 @@
 param webAppName string = uniqueString(resourceGroup().id) // Generate unique String for web app name
-param sku string = 'P1v4' // The SKU of App Service Plan
+param sku string = 'P0v3' // The SKU of App Service Plan
 param location string = resourceGroup().location
 
 var appServicePlanName = toLower('AppServicePlan-${webAppName}')
